@@ -129,6 +129,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button5" />
+        app:layout_constraintStart_toEndOf="@+id/button5"
+        android:onClick="goSubmitButton"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

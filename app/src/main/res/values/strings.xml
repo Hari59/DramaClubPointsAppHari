@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">Drama Club Points App</string>
+    
+    <string-array name="pointsType">
+        <item>Role in Production: </item>
+        <item>Major Role - 8</item>
+        <item>Stage Manager - 8</item>
+        <item>Student Assistant - 8</item>
+        <item>Crew Head - 6</item>
+        <item>Supporting Role - 5</item>
+        <item>Dance Captain - 4</item>
+        <item>Ensemble for GI - 4</item>
+        <item>Chorus/Walk On - 3</item>
+        <item>Set Crew - 3</item>
+        <item>Props Crew - 3</item>
+        <item>Tech Crew - 3</item>
+        <item>Costumes/Make Up Crew - 3</item>
+        <item>Musician/Pit Orchestra - 3</item>
+        <item>Showchoir - 3</item>
+        <item>Theatre Fest - 3</item>
+        <item>Running Crew - 2</item>
+        <item>Publicity Crew - 2</item>
+        <item>Hang and Focus - 1</item>
+        <item>Variety Show Performer (besides Showchoir) - 1</item>
+        <item>Let The Stars Come Out - 0.5</item>
+        <item>Audience - 0.25</item>
+    </string-array>
+
+
 </resources>
