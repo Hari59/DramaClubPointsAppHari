@@ -3,6 +3,9 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
+    <dimen name="activityHeight">730dp</dimen>
+    <dimen name="activityWidth">410dp</dimen>
+
     <dimen name="progressBarWidth">350dp</dimen>
     <dimen name="progressBarHeight">35dp</dimen>
 
