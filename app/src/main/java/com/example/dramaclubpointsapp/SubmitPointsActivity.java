@@ -16,7 +16,7 @@ public class SubmitPointsActivity extends AppCompatActivity {
 
     public void goHomeButton(View v){
 
-        Intent intent = new Intent(this, SubmitPointsActivity.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }
