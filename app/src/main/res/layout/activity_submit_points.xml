@@ -77,25 +77,37 @@
             android:id="@+id/radioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Freshman" />
+            android:fontFamily="sans-serif-condensed"
+            android:text="Freshman"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/editTextSize" />
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sophmore" />
+            android:fontFamily="sans-serif-condensed"
+            android:text="Sophmore"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/editTextSize" />
 
         <RadioButton
             android:id="@+id/radioButton3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Junior" />
+            android:fontFamily="sans-serif-condensed"
+            android:text="Junior"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/editTextSize" />
 
         <RadioButton
             android:id="@+id/radioButton4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Senior" />
+            android:fontFamily="sans-serif-condensed"
+            android:text="Senior"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/editTextSize" />
     </RadioGroup>
 
     <TextView
@@ -131,7 +143,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="60dp"
+        android:layout_marginEnd="64dp"
         android:fontFamily="sans-serif-condensed"
         android:text="Company:"
         android:textColor="@color/colorPrimary"
@@ -144,21 +156,22 @@
         android:id="@+id/editText3"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="22dp"
         android:ems="10"
+        android:fontFamily="sans-serif-condensed"
         android:hint="Production name"
         android:inputType="textPersonName"
         android:textColor="@color/colorAccent"
         android:textColorHint="@color/colorPrimaryDark"
-        android:textSize="@dimen/infoTextSize"
+        android:textSize="@dimen/editTextSize"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:entries="@array/pointsType"
         android:spinnerMode="dropdown"
         app:layout_constraintEnd_toEndOf="parent"
@@ -169,21 +182,31 @@
         android:id="@+id/editText5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="92dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:ems="10"
+        android:fontFamily="sans-serif-condensed"
         android:hint="Show report"
         android:inputType="textPersonName"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="227dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="92dp"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:text="If you are submitting for a show you saw please write your report here."
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="If you are submitting for a show you saw please write your report here:"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/editTextSize"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner" />
 
@@ -191,15 +214,19 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="128dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/custom_button2"
         android:text="SUBMIT POINTS"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
         android:textSize="@dimen/infoTextSize"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText5" />
+        app:layout_constraintTop_toBottomOf="@+id/editText6" />
 
     <Button
         android:id="@+id/button4"
@@ -243,11 +270,48 @@
         android:id="@+id/editText4"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="22dp"
         android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Company name"
         android:inputType="textPersonName"
-        android:text="Company name"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="@dimen/editTextSize"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Any memes you wanna share with us?"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/infoTextSize"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Memes?"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="@dimen/editTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
