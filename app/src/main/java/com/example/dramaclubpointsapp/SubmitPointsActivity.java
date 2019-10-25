@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -70,7 +71,8 @@ public class SubmitPointsActivity extends AppCompatActivity {
         String role = spinner.getSelectedItem().toString();
 
         if (first.getText().toString().equals("") || last.getText().toString().equals("") || spinner.getSelectedItem().toString().equals("Role in Production:")){
-
+            Toast toast = Toast.makeText(SubmitPointsActivity.this, "Please fill in all fields.", Toast.LENGTH_LONG);
+            toast.show();
         }
         else {
             first.setText("");
@@ -89,6 +91,6 @@ public class SubmitPointsActivity extends AppCompatActivity {
             startActivity(chosenIntent);
         }
 
-        
+
     }
 }
