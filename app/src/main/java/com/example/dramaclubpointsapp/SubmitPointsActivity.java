@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -61,10 +62,33 @@ public class SubmitPointsActivity extends AppCompatActivity {
         EditText productionName = (EditText) findViewById(R.id.editText3);
         EditText companyName = (EditText) findViewById(R.id.editText4);
         TextView getGrade = (TextView) findViewById(R.id.problemSolver);
+        Spinner spinner = (Spinner) findViewById(R.id.spinner);
 
         String firstName = first.getText().toString();
         String lastName = last.getText().toString();
         String grade = getGrade.getText().toString();
+        String role = spinner.getSelectedItem().toString();
 
+        if (first.getText().toString().equals("") || last.getText().toString().equals("") || spinner.getSelectedItem().toString().equals("Role in Production:")){
+
+        }
+        else {
+            first.setText("");
+            last.setText("");
+            productionName.setText("");
+            companyName.setText("");
+
+
+
+            String sent = firstName + " " + lastName + ", " + grade + ", " + role + ".";
+            Intent intent = new Intent(Intent.ACTION_SEND);
+            intent.setType("text/plain");
+            intent.putExtra(Intent.EXTRA_TEXT, sent);
+            String chooserTitle = "Choose an app to send your message";
+            Intent chosenIntent = Intent.createChooser(intent, chooserTitle);
+            startActivity(chosenIntent);
+        }
+
+        
     }
 }
