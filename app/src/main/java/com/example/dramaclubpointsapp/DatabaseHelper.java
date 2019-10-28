@@ -14,12 +14,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String DB_NAME = "PointsSubmissions";
     private static final String TABLE_NAME = "points_table";
     private static final String COL0 = "_id";           // unique ID for each element
-    private static final String COL1 = "TIME_STAMP";          // name of runner
+    private static final String COL1 = "TIME_STAMP";
     private static final String COL2 = "FIRST_NAME";
     private static final String COL3 = "LAST_NAME";
-    private static final String COL4 = "GRADE";// distance of run ex:  (3.5 miles)
+    private static final String COL4 = "GRADE";
     private static final String COL5 = "PRODUCTION";
-    private static final String COL6 = "MEMES";// time of run          (0:34:12 means 34 min 12 sec)
+    private static final String COL6 = "MEMES";
 
 
     public DatabaseHelper(Context context) {
