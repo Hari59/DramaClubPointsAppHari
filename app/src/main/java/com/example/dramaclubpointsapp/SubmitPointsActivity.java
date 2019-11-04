@@ -93,11 +93,6 @@ public class SubmitPointsActivity extends AppCompatActivity {
             productionName.setText("");
             companyName.setText("");
 
-
-
-
-
-
             databaseHelper.addData(time,firstName, lastName, grade, prod, memes);
 
             String sent = firstName + " " + lastName + ", " + grade + ", " + role + ".";
@@ -108,9 +103,6 @@ public class SubmitPointsActivity extends AppCompatActivity {
             Intent chosenIntent = Intent.createChooser(intent, chooserTitle);
             startActivity(chosenIntent);
 
-
         }
-
-
     }
 }
